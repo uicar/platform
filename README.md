@@ -7,4 +7,4 @@ Platform for control of user data and stadistics
 
 
 
-<img src="http://uicar.io/images/Artboard.png">
+<img src="https://github.com/uicar/platform/blob/master/src/assets/Artboard.png?raw=true">
