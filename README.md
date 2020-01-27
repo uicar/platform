@@ -2,12 +2,7 @@
 
 
 
-
-
-
-
-
-<img src="https://github.com/uicar/platform/blob/master/src/assets/Artboard.png?raw=true">
+<img src="https://uicar.io/images/Artboard.png">
 
 <br>
 
