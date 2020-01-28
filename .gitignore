@@ -92,7 +92,6 @@ www/
 src/app/firebase.ts
 $RECYCLE.BIN/
 
-/src/index.html
 
 .DS_Store
 Thumbs.db

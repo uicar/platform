@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import {Router} from '@angular/router';
+import { ServiceService } from '../services/service.service';
 
 
 
@@ -14,7 +15,7 @@ export class HomePage {
   numbers: any;
 
   users = [];
-  constructor( private http: HttpClient , private route: Router) {
+  constructor( private http: HttpClient , private route: Router, private service: ServiceService) {
     this.usersload();
     this.numbers = Array(15).fill(0).map((x, i ) => i);
   }
@@ -31,7 +32,7 @@ export class HomePage {
 
     async usersload() {
 
-      await this.http.get(`http://uicar.openode.io/platform/users`).subscribe((data: any) => {
+      await this.service.functiongetRides().subscribe((data: any) => {
         this.users = data;
         console.log(data);
       });
